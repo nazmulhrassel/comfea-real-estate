@@ -66,6 +66,14 @@
   }
   .manu__list li {
     padding: 4px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    height: 35px;
+  }
+  .manu__list li:hover {
+    border-color: var(--clr-body);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
   }
   .manu__list li a {
     font-family: var(--font-regular);
@@ -169,7 +177,7 @@
     row-gap: 24px;
   }
   .footer__upper {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
   }

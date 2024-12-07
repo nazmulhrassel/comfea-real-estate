@@ -29,6 +29,8 @@
 }
 .manu__list {
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .hero__text {
   font-family: var(--font-regular);
@@ -151,7 +153,6 @@
   margin-block: 16px;
 }
 .detail__item {
-  font-family: var(--font-regular);
   font-weight: var(--fwr);
   color: var(--clr-500);
   font-size: 1rem;
@@ -438,6 +439,11 @@ textarea::placeholder {
 
 /* Footer manu */
 .footer__manu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__upper {
   display: flex;
   flex-direction: column;
   gap: 24px;
