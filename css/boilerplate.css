@@ -3,8 +3,7 @@
   --clr-25: #fcfcfc;
   --clr-50: #fafafa;
   --clr-100: #f4f4f5;
-  --clr-200: #e4e4e7;
-  --clr-300: #d1d1d6;
+  --clr-200: #e4e4e7;  
   --clr-300: #d1d1d6;
   --clr-400: #a0a0ab;
   --clr-500: #70707b;
@@ -67,7 +66,8 @@ ul,
 li,
 a,
 span,
-button {
+button,
+blockquote {
   margin: 0;
   padding: 0;
 }
@@ -112,18 +112,16 @@ button {
   background-color: var(--clr-900);
 }
 .dark__btn a:hover,
-.dark__btn a:focus {
-  color: var(--clr-900);
-  background-color: var(--clr-25);
+.dark__btn a:focus {  
+  background-color: var(--clr-700);
 }
 .light__btn a {
   color: var(--clr-900);
   background-color: var(--clr-25);
 }
 .light__btn a:hover,
-.light__btn a:focus {
-  color: var(--clr-25);
-  background-color: var(--clr-900);
+.light__btn a:focus {  
+  background-color: var(--clr-200);
 }
 /* Sharing Button Styling */
 
@@ -132,7 +130,7 @@ h2 {
   font-weight: var(--fwr);
   color: var(--clr-900);
   font-size: 2rem;
-  font-size: clamp(2rem, 1.56rem + 1.88vw, 3.25rem);  
+  font-size: clamp(2rem, 1.56rem + 1.88vw, 3.25rem);
   line-height: 1.2;
 }
 h4,
@@ -152,11 +150,17 @@ p {
   line-height: 1.55;
 }
 
-.blog__header, .about__content,
+.blog__header,
+.about__content,
 .about__title,
-.about__details, .propertyListing__header, .property__card, .faq__intro, .faq__accordion, .blog__container, .contact__intro {
+.about__details,
+.propertyListing__header,
+.property__card,
+.faq__intro,
+.faq__accordion,
+.blog__container,
+.contact__intro {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
-

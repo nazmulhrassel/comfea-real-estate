@@ -45,6 +45,9 @@
   left: 20px;
   bottom: 42px;
 }
+.scroll__down:hover {
+  fill: aqua;
+}
 /* Hero Section start */
 
 /* Section Wrapper Block */

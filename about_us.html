@@ -30,12 +30,12 @@
         </div>
         <nav class="top__nav mobile__hidden">
           <ul class="manu__list">
-            <li><a href="#index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a class="manu__active" href="#about_us">About us</a></li>
             <li><a href="#property">Property</a></li>
             <li><a href="#agent">Agent</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a class="screen820__hidden" href="#faqs">FAQ's</a></li>
+            <li class="screen820__hidden"><a href="#blog">Blog</a></li>
+            <li class="screen820__hidden"><a href="#faqs">FAQ's</a></li>
           </ul>
         </nav>
         <button class="ctn__button dark__btn mobile__hidden">
@@ -47,29 +47,32 @@
           aria-label="Toggle Menu"
           role="img"
         >
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5 9H27M5 16H27M5 23H27"
-              stroke="#18181B"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <a href="./mobileToggleMenu.html">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 9H27M5 16H27M5 23H27"
+                stroke="#18181B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              /></svg
+          ></a>
         </button>
       </div>
     </header>
     <!-- Header ends -->
+
+    <!-- Hero Section -->
     <main class="content__wrapper">
       <section class="about__hero">
         <div class="about__content">
-          <div class="about__title">
+          <div class="about__heading">
             <h2>Explore Our Property Listings</h2>
           </div>
           <div class="about__details">
@@ -88,31 +91,32 @@
           />
         </div>
       </section>
+      <!-- Hero Section ends-->
 
       <section>
         <div class="properties__number">
           <div class="sold number__box">
             <h3>280<span>&#43;</span></h3>
-            <p>Properties Sold</p>
+            <p><i>Properties Sold</i></p>
           </div>
           <div class="rent number__box">
             <h3>99<span>&#43;</span></h3>
-            <p>Properties for Rent</p>
+            <p><i>Properties for Rent</i></p>
           </div>
           <div class="happy__client number__box">
             <h3>360<span>&#43;</span></h3>
-            <p>Happy Client</p>
+            <p><i>Happy Client</i></p>
           </div>
           <div class="client__stfn__rate number__box">
             <h3>95<span>&#37;</span></h3>
-            <p>Client Satisfaction Rate</p>
+            <p><i>Client Satisfaction Rate</i></p>
           </div>
         </div>
       </section>
 
       <section class="business__excellence">
         <div class="business__excellence__text">
-          <div>
+          <div class="business__excellence__heading">
             <h2>
               Pioneering Excellence in Property Development for Your Future
             </h2>
@@ -146,7 +150,22 @@
           </div>
         </div>
         <div class="business__excellence__image">
-          <img src="./assets/images/about_home_keys.png" alt="House and Keys" />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./assets/images/about_home_keys.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/about_home_keys-tab.png"
+              width="864"
+              height="525"
+            />
+            <img
+              src="./assets/images/about_home_keys.png"
+              alt="House and Keys"
+            />
+          </picture>
         </div>
       </section>
 
@@ -201,10 +220,11 @@
                 </p>
                 <p class="testimonial__author">— Jessica R</p>
                 <div class="scroll__line">
-                  <hr class="testiminial__scroll testiminial__scroll__active" />
-                  <hr class="testiminial__scroll" />
-                  <hr class="testiminial__scroll" />
-                  
+                  <hr
+                    class="testiminial__scroll testiminial__scroll__active line__effect"
+                  />
+                  <hr class="testiminial__scroll line__effect" />
+                  <hr class="testiminial__scroll line__effect" />
                 </div>
               </blockquote>
             </div>
