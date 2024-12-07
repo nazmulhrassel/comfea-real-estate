@@ -45,8 +45,27 @@
   left: 20px;
   bottom: 42px;
 }
+.scroll__down {
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
 .scroll__down:hover {
-  fill: aqua;
+}
+.scroll__down svg path {
+  stroke: var(--clr-25);
+  stroke-width: 2;
+  transition: stroke 0.3s ease;
+}
+.scroll__down svg rect {
+  /* fill: var(--clr-700);
+  fill-opacity: 0.2; */
+  transition: fill 0.3s ease;
+  z-index: -1;
+}
+.scroll__down:hover svg path,
+.scroll__down:hover svg rect {
+  fill: var(--clr-25);
+  stroke: var(--clr-500);
 }
 /* Hero Section start */
 
@@ -168,6 +187,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 /* Vertical Line */
 .vl {
@@ -509,6 +529,11 @@ textarea::placeholder {
   gap: 8px;
 }
 /* Footer Section ends */
+@media (max-width: 42em) {
+  .only__mobile__hidden {
+    display: none;
+  }
+}
 
 @media (max-width: 47.99em) {
   .mobile__hidden,
@@ -516,6 +541,7 @@ textarea::placeholder {
     display: none;
   }
 }
+
 @media (min-width: 48em) {
   .big__screen__hidden {
     display: none;
