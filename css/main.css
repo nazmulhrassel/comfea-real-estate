@@ -333,7 +333,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(24, 24, 27, 0.42);
+  background: rgba(0, 0, 0, 0.50);
   border-radius: 26px;
   z-index: -1;
 }
@@ -536,9 +536,11 @@ textarea::placeholder {
 }
 
 @media (max-width: 47.99em) {
-  .mobile__hidden,
-  .propertyListing__container .mobile__hidden {
+  .mobile__hidden, 
+  .propertyListing__container .mobile__hidden,
+  .blog__container .tab__show {
     display: none;
+
   }
 }
 
@@ -546,16 +548,20 @@ textarea::placeholder {
   .big__screen__hidden {
     display: none;
   }
+  
 }
+
 @media (max-width: 51.25em) {
-  .screen820__hidden {
+  
+   .screen820__hidden {
     display: none;
   }
 }
 @media (max-width: 74.99em) {
   .propertyListing__container .only__desktop,
   .faq__container .only__desktop,
-  .blog__container .only__desktop {
+  .blog__container .only__desktop,
+  .blog__hero__container .only__desktop {
     display: none;
   }
 }
