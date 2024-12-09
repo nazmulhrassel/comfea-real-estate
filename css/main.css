@@ -219,6 +219,7 @@
   text-align: left;
   padding: 16px;
   width: 100%;
+  cursor: pointer;
 }
 .faq__question p {
   font-family: var(--font-medium);
@@ -234,6 +235,7 @@
   font-size: 1rem;
   color: var(--clr-900);
   display: none;
+  cursor: pointer;
 }
 
 /* FAQ Active Styling */
