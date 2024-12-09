@@ -367,7 +367,7 @@
     width: 50%;
   }
   .propertyListing__header p {
-    width: 42ch;
+    width: 50ch;
   }
   .propertyListing__container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
