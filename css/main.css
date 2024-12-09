@@ -49,16 +49,13 @@
   display: inline-block;
   transition: background-color 0.3s ease;
 }
-.scroll__down:hover {
-}
+
 .scroll__down svg path {
   stroke: var(--clr-25);
   stroke-width: 2;
   transition: stroke 0.3s ease;
 }
 .scroll__down svg rect {
-  /* fill: var(--clr-700);
-  fill-opacity: 0.2; */
   transition: fill 0.3s ease;
   z-index: -1;
 }
@@ -134,6 +131,10 @@
   font-size: 1rem;
   letter-spacing: 0.4px;
   line-height: 0.2;
+  transition: all 0.3s ease-in-out;
+}
+.badge:hover {
+  background-color: var(--clr-700);
 }
 .propertyListing__container {
   display: grid;
@@ -403,6 +404,7 @@ textarea {
   padding: 12px 14px;
   font-family: var(--font-regular);
   font-size: 1rem;
+  resize: none;
 }
 textarea::placeholder {
   font-family: var(--font-regular);
@@ -417,6 +419,10 @@ textarea::placeholder {
   line-height: 1.55;
   font-family: var(--font-medium);
   font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.contact__btn:hover {
+  background-color: var(--clr-700);
 }
 /* Contact Section ends */
 

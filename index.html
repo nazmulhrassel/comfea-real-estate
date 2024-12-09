@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Hero Section Start -->
-    <div class="hero__section">
+    <div class="hero__section" id="hero__home">
       <!-- Header Start -->
       <header class="header">
         <div class="header__wrapper content__wrapper">
@@ -31,19 +31,19 @@
           <nav class="top__nav mobile__hidden">
             <ul class="manu__list">
               <li><a class="manu__active" href="./index.html">Home</a></li>
-              <li><a href="./about_us.html">About us</a></li>
-              <li><a href="./property-listing.html">Property</a></li>
+              <li><a href="#about-us__page">About us</a></li>
+              <li><a href="#product__list__now">Property</a></li>
               <li class="tab__manu__hidden">
                 <a href="./contact-us.html">Agent</a>
               </li>
               <li class="tab__manu__hidden">
-                <a href="./blog-listing.html">Blog</a>
+                <a href="#our__blog__section">Blog</a>
               </li>
-              <li><a href="./faq.html">FAQ's</a></li>
+              <li><a href="#faq__section">FAQ's</a></li>
             </ul>
           </nav>
           <button class="ctn__button light__btn mobile__hidden">
-            <a href="./contact-us.html">Contact Us</a>
+            <a href="#contact-us__now">Contact Us</a>
           </button>
           <!-- Mobile menu toggle -->
           <button
@@ -82,7 +82,7 @@
             </h1>
           </div>
           <div class="scroll__down">
-            <a href="#"
+            <a href="#product__list__now"
               ><svg
                 width="62"
                 height="62"
@@ -131,12 +131,12 @@
     <!-- Main Wrapper Start -->
     <main class="content__wrapper">
       <!-- About Section Start -->
-      <section class="about__us padding__block">
+      <section id="about-us__page" class="about__us padding__block">
         <div class="about__content">
           <div class="about__title">
             <h2>Discover Our Commitment to Your Real Estate Success</h2>
             <button class="ctn__button dark__btn">
-              <a href="#">Learn More</a>
+              <a href="./about_us.html">Learn More</a>
             </button>
           </div>
           <div class="about__details">
@@ -200,7 +200,7 @@
       <!-- About Section Ends -->
 
       <!-- Property Listing Section Start -->
-      <section class="property__listing padding__block">
+      <section id="product__list__now" class="property__listing padding__block">
         <div class="propertyListing__header">
           <h2>Our Property Listings</h2>
           <p>
@@ -1307,13 +1307,13 @@
           <!-- Property card 9 Ends -->
         </div>
         <button class="ctn__button dark__btn view__btn">
-          <a href="#">View More</a>
+          <a href="./property-listing.html">View More</a>
         </button>
       </section>
       <!-- Property Listing Section Ends -->
 
       <!-- FAQ Section Start -->
-      <section class="faq__section padding__block">
+      <section id="faq__section" class="faq__section padding__block">
         <div class="faq__container">
           <div class="faq__intro">
             <h2>Frequently Asked Questions</h2>
@@ -1502,7 +1502,7 @@
       <!-- FAQ Section Ends -->
 
       <!-- Blog Section Start -->
-      <section class="blog__section padding__block">
+      <section id="our__blog__section" class="blog__section padding__block">
         <div class="blog__header">
           <h2 class="mobile__hidden">Real Estate Tips & Insights</h2>
           <h2 class="big__screen__hidden">Our Recent Articles</h2>
@@ -1748,7 +1748,7 @@
             </ul>
             <ul>
               <li>
-                <a href="#" class="next__page"
+                <a href="./blog-listing.html" class="next__page"
                   ><svg
                     width="40"
                     height="40"
@@ -1771,7 +1771,7 @@
     <!-- Main Wrapper Start -->
 
     <!-- Contact Section Start -->
-    <section class="contact__section">
+    <section id="contact-us__now" class="contact__section">
       <div class="contact__wrapper">
         <div class="contact__intro">
           <h2>Need a help to find your comfort home?</h2>
@@ -1897,7 +1897,7 @@
           <p class="copyright">&copy; 2023-2024, All Rights Reserved</p>
 
           <div class="btn___back__top">
-            <a class="back__to__top" href="./index.html"
+            <a class="back__to__top" href="#hero__home"
               ><p>Back to top</p>
               <svg
                 width="16"
