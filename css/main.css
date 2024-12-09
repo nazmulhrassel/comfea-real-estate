@@ -535,6 +535,9 @@ textarea::placeholder {
   gap: 8px;
 }
 /* Footer Section ends */
+
+/* Sharing media quries for multiple pages */
+
 @media (max-width: 42em) {
   .only__mobile__hidden {
     display: none;
