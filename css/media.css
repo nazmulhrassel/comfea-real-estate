@@ -392,7 +392,7 @@
     justify-content: space-between;
   }
   .blog__header p {
-    width: 40ch;
+    width: 50ch;
   }
   .contact__wrapper {
     width: calc(100% - 112px);
