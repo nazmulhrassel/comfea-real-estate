@@ -20,3 +20,4 @@ and the other mentors for providing this incredible learning opportunity. 🙏
 
 The modern layout is constructed using CSS Flexbox and Grid, providing a structured and visually appealing design. 
 This project reflects my learning journey and showcases the practical application of modern web design principles. 🌟
+Thnk you for reading. 😇
