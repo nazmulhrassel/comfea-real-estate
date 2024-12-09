@@ -16,14 +16,14 @@
     <link rel="stylesheet" href="./css/faq.css" />
     <link rel="stylesheet" href="./css/contact-us.css" />
 
-    <title>Confea - Frequently Asked Questions</title>
+    <title>Contact us</title>
   </head>
   <body>
     <!-- Header Start -->
     <header class="header">
       <div class="header__wrapper content__wrapper">
         <div class="logo">
-          <a href="#"
+          <a href="./index.html"
             ><img
               src="./assets/images/logo_mobile.png"
               alt="Comfea Real Estate"
@@ -35,18 +35,18 @@
           <ul class="manu__list">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about_us.html">About us</a></li>
-            <li>
-              <a href="./property-listing.html">Property</a>
+            <li><a href="./property-listing.html">Property</a></li>
+            <li class="tab__manu__hidden">
+              <a href="./contact-us.html">Agent</a>
             </li>
-            <li class="screen820__hidden"><a href="#agent">Agent</a></li>
-            <li class="screen820__hidden">
+            <li class="tab__manu__hidden">
               <a href="./blog-listing.html">Blog</a>
             </li>
-            <li><a class="manu__active" href="./faq.html">FAQ's</a></li>
+            <li><a href="./faq.html">FAQ's</a></li>
           </ul>
         </nav>
         <button class="ctn__button dark__btn mobile__hidden">
-          <a href="#contact_us">Contact Us</a>
+          <a href="./contact-us.html">Contact Us</a>
         </button>
         <!-- Mobile menu toggle -->
         <button
@@ -74,7 +74,135 @@
       </div>
     </header>
     <!-- Header ends -->
-    <main class="content__wrapper"></main>
+    <main class="content__wrapper">
+      <!-- Contact Us Header start  -->
+      <div class="contact-us__header listing__header faq__header">
+        <h2 class="contact-us__headline listing__headline faq__headline">
+          Contact us
+        </h2>
+        <p class="contact-us__p listing__details faq__p">
+          Our friendly team would love to hear from you.
+        </p>
+      </div>
+      <!-- Contact Us Header ends  -->
+
+      <!-- Contact Us Main Content -->
+      <div class="contact-us__main__container">
+        <!-- Contact Form -->
+        <div class="contact-us__form__container">
+          <form class="contact-us__form">
+            <div class="form__row">
+              <div class="contact-us__form__group">
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="contact-us__form__group">
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="contact-us__form__group">
+              <input
+                type="email"
+                id="email"
+                class="contact__email"
+                name="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="contact-us__form__group contact-us__phone__number">
+              <label for="phone__number">Phone Number</label>
+              <div class="phone__input">
+                <select class="country__code" name="country-code">
+                  <option class="" value="UK">UK</option>
+                  <option value="US">US</option>
+                  <option value="CA">CA</option>
+                </select>
+                <input
+                  class="contact__phone__number"
+                  type="tel"
+                  id="phone-number"
+                  name="phone-number"
+                  placeholder="+1 (555) 000-0000"
+                />
+              </div>
+            </div>
+
+            <div class="contact-us__form__group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Leave us a message..."
+              ></textarea>
+            </div>
+
+            <div class="contact-us__form__group contact-us__checkbox__group">
+              <input type="checkbox" name="privacy-policy" />
+              <p>You agree to our friendly privacy policy.</p>
+            </div>
+
+            <button type="submit" class="contact-us__submit__button">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-us__address__container">
+          <!-- Email -->
+          <div class="contact__item">
+            <i class="icon email__icon"></i>
+            <div class="contact__item__detail">
+              <h5>Email</h5>
+              <p>Our friendly team is here to help.</p>
+            </div>
+            <a href="mailto:info@example.com">info@example.com</a>
+          </div>
+          <!-- Phone -->
+          <div class="contact__item">
+            <i class="icon phone__icon"></i>
+            <div class="contact__item__detail">
+              <h5>Phone</h5>
+              <p>Mon-Fri from 8am to 5pm.</p>
+            </div>
+            <a href="tel:+15550123456">+1 555-0123-456</a>
+          </div>
+          <!-- Head Office -->
+          <div class="contact__item">
+            <i class="icon office__icon"></i>
+            <div class="contact__item__detail">
+              <h5>Head Office</h5>
+              <p>Come say hello at our office HQ.</p>
+            </div>
+            <address class="address__office">
+              789 Elm Street, Springfield, Illinois 62704
+            </address>
+          </div>
+          <!-- Office -->
+          <div class="contact__item">
+            <i class="icon email__icon"></i>
+            <div class="contact__item__detail">
+              <h5>Office</h5>
+              <p>Come say hello at our office HQ.</p>
+            </div>
+            <address class="address__office">
+              27 Withy Grove, Manchester M4 2BS, United Kingdom
+            </address>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Footer Start -->
     <footer class="footer">
       <div class="footer_content">
@@ -120,7 +248,7 @@
                 <ul class="footer__navlinks">
                   <li><a href="./faq.html">FAQ's</a></li>
                   <li><a href="./blog-listing.html">Blog</a></li>
-                  <li><a href="#">Agent</a></li>
+                  <li><a href="./contact-us.html">Agent</a></li>
                 </ul>
               </div>
             </div>

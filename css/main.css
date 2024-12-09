@@ -333,7 +333,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.50);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 26px;
   z-index: -1;
 }
@@ -536,11 +536,10 @@ textarea::placeholder {
 }
 
 @media (max-width: 47.99em) {
-  .mobile__hidden, 
+  .mobile__hidden,
   .propertyListing__container .mobile__hidden,
   .blog__container .tab__show {
     display: none;
-
   }
 }
 
@@ -548,13 +547,11 @@ textarea::placeholder {
   .big__screen__hidden {
     display: none;
   }
-  
 }
 
-@media (max-width: 51.25em) {
-  
-   .screen820__hidden {
-    display: none;
+@media (max-width: 55em) {
+  .tab__manu__hidden {
+    display: none; /*Few manu is hidden in tab screen*/
   }
 }
 @media (max-width: 74.99em) {
